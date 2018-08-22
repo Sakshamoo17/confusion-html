@@ -1,0 +1,69 @@
+
+    <div class="container" ng-controller="IndexController">
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+				<div class="media" ng-init="promit=promret(0)">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         ng-src="{{promit.image}}" alt="Uthappizza">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{promit.name}} <span class="label label-danger">{{promit.label}}</span> <span class="badge">{{promit.price | currency}}</span> </h2> 
+                        <p>{{promit.description}}</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+                <h3 align=center>This Month's promotions</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+				<div class="media" ng-init="prom1=promret(1)">
+                    <div class="media-body">
+                        <h2 class="media-heading">{{prom1.name}} <span class="label label-danger">{{prom1.label}}</span> <span class="badge">{{prom1.price | currency}}</span> </h2> 
+                        <p>{{prom1.description}}</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                     <div class="media-right media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         ng-src="{{prom1.image}}" alt="buffet">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+				<div class="media" ng-init="prom2=promret(2)">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         ng-src="{{prom2.image}}" alt="Alberto Somayya">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{prom2.name}} <small>{{prom2.subheading}}</small></h2> 
+                        <p>{{prom2.description}}</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
